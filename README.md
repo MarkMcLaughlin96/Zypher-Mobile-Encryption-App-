@@ -6,6 +6,6 @@ Username = admin
 Password = password
 
 Password vault
-Passoword = password12 
+Passoword = password1 
 
 Will create account creation for login and vault at later date. 
