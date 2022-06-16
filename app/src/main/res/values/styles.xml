@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NoActionBar" parent="Theme.Zypher">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.Zypher">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowBackground">@drawable/background</item>
+    </style>
+    <style name="Widget.App.Tooltip" parent="Widget.MaterialComponents.Tooltip">
+    <item name="backgroundTint">@color/teal_200</item>
+    </style>
+</resources>

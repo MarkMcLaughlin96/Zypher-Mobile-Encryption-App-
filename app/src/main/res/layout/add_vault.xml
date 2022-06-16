@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/createVaultBody"
+        android:layout_marginTop="32dp"
+        android:text="@string/create_new_vault"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/add_logo"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:src="@drawable/ic_baseline_account_circle_24"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:id="@+id/dropdown_menu"
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="0dp"
+        android:hint="@string/application"
+        app:hintTextColor="@color/white"
+        app:boxBackgroundColor="@color/purple_700"
+        app:boxStrokeColor="@color/teal_200"
+        app:endIconTint="@color/teal_200"
+        app:errorEnabled="true"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/activeAppDropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/add_layout_id"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="5dp"
+            android:hint="@string/label_id"
+            android:textColorHint="@color/white"
+            android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/white"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_username"
+                android:textColor="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/add_layout_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="5dp"
+            android:hint="@string/password"
+            android:textColorHint="@color/white"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/white"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_psw"
+                android:inputType="textPassword"
+                android:textColor="@color/white"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/genButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:backgroundTint="@color/purple_700"
+            android:textColor="@color/white"
+            android:text="@string/generate" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginBottom="14dp"
+            android:id="@+id/createVault"
+            android:text="@string/create_vault"
+            android:backgroundTint="@color/purple_700"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

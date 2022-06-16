@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.zypher">
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"></uses-permission>
+
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="30"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Zypher">
+        <activity
+            android:name=".crypt"
+            android:exported="false"
+            />
+        <activity
+            android:name=".exceptionCrypt"
+            android:exported="false"
+            />
+        <activity
+            android:name=".EncrypterDecrypter"
+            android:exported="false"
+            />
+        <activity
+            android:name=".settings"
+            android:exported="false"
+            />
+        <activity
+            android:name=".generatePass"
+            android:exported="false"
+            />
+        <activity
+            android:name=".editVault"
+            android:exported="false"
+            />
+        <activity
+            android:name=".addVault"
+            android:exported="false"
+            />
+        <activity
+            android:name=".passwordVault"
+            android:exported="false"
+            />
+        <activity
+            android:name=".password"
+            android:exported="false"
+            />
+         <activity
+            android:name=".fileEncryptor"
+            android:exported="false"
+             />
+        <activity
+            android:name=".TextEncryptor"
+            android:exported="false"
+            />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

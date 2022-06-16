@@ -1,0 +1,14 @@
+{
+  "vault": [
+    {
+      "name": "instagram",
+      "id": "dummydata012",
+      "pswd": "whatwhatwhat"
+    },
+    {
+      "name": "facebook",
+      "id": "dummyfb012",
+      "pswd": "gbwhatwgba"
+    }
+  ]
+}
